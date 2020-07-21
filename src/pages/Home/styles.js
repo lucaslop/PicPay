@@ -1,13 +1,25 @@
-//arquivo src>pages>SignUp>styles.js
 import styled from 'styled-components/native';
-import {Platform} from 'react-native';
 
-export const Container = styled.KeyboardAvoidingView.attrs({
-  enabled: Platform.IOS === 'ios',
-  behavior: 'padding',
-})`
+export const ScrollView = styled.ScrollView``;
+export const Container = styled.SafeAreaView`
+  background: #000;
   flex: 1;
-  justify-content: center;
+`;
+
+export const Header = styled.View`
+  height: 50px;
+  padding: 0 16px;
+  flex-direction: row;
   align-items: center;
-  padding: 0 30px;
+  justify-content: space-between;
+`;
+
+export const BalanceContainer = styled.View``;
+
+export const BalanceTitle = styled.Text`
+  color: #fff;
+`;
+
+export const BalanceValue = styled.Text`
+  color: #fff;
 `;

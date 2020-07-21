@@ -1,16 +1,28 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/AntDesign';
-import {View} from 'react-native';
-import Background from '../../components/Background';
-import {Container} from './styles';
+import {
+  Container,
+  Header,
+  BalanceContainer,
+  BalanceTitle,
+  BalanceValue,
+  ScrollView,
+} from './styles';
 
 const Home = () => {
   return (
-    <Background>
-      <Container>
-        <View />
-      </Container>
-    </Background>
+    <Container>
+      <ScrollView>
+        <Header>
+          <Icon name="qrcode" size={30} color="#18c860" />
+          <BalanceContainer>
+            <BalanceTitle>Meu Saldo</BalanceTitle>
+            <BalanceValue>R$ 0,00</BalanceValue>
+          </BalanceContainer>
+          <Icon name="gift" size={30} color="#18c860" />
+        </Header>
+      </ScrollView>
+    </Container>
   );
 };
 
