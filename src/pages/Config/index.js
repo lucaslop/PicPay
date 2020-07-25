@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import Settings from "../../components/Settings";
 import Icon from "react-native-vector-icons/AntDesign";
 import { Container, Header, Title, Text, ScrollView } from "./styles";
 
@@ -7,10 +7,12 @@ const Config = () => {
   return (
     <Container>
       <Header>
-        <Title>Meu Saldo</Title>
+        <Title>Ajustes</Title>
         <Text>Ajuda</Text>
       </Header>
-      <ScrollView></ScrollView>
+      <ScrollView>
+        <Settings />
+      </ScrollView>
     </Container>
   );
 };
