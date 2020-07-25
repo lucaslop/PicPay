@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const ScrollView = styled.ScrollView``;
 export const Container = styled.SafeAreaView`
-  background: #000;
+  background: #eee;
   flex: 1;
 `;
 
@@ -17,9 +17,9 @@ export const Header = styled.View`
 export const BalanceContainer = styled.View``;
 
 export const BalanceTitle = styled.Text`
-  color: #fff;
+  color: #000;
 `;
 
 export const BalanceValue = styled.Text`
-  color: #fff;
+  color: #000;
 `;

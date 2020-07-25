@@ -1,18 +1,18 @@
-import {createAppContainer, createSwitchNavigator} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
-import {createBottomTabNavigator} from 'react-navigation-tabs';
-import Home from './pages/Home';
-import Wallet from './pages/Wallet';
-import Pay from './pages/Pay';
-import Notifications from './pages/Notification';
-import Settings from './pages/Config';
+import { createAppContainer, createSwitchNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
+import { createBottomTabNavigator } from "react-navigation-tabs";
+import Home from "./pages/Home";
+import Wallet from "./pages/Wallet";
+import Pay from "./pages/Pay";
+import Notifications from "./pages/Notification";
+import Settings from "./pages/Config";
 // qual tipo de navegação é
 export default () =>
   createAppContainer(
     createStackNavigator(
       {
         Sign: createSwitchNavigator({
-          Home,
+          Home
         }),
 
         App: createBottomTabNavigator(
@@ -21,26 +21,26 @@ export default () =>
             Wallet,
             Pay,
             Notifications,
-            Settings,
+            Settings
           },
 
           {
             tabBarOptions: {
               keyboardHidesTabBar: true,
-              activeTintColor: '#FFF',
-              inactiveTintColor: '#92929c',
+              activeTintColor: "#000",
+              inactiveTintColor: "#92929c",
 
               style: {
-                backgroundColor: '#131418',
-                borderTopColor: 'rgba(255, 255, 255, 0.2)',
-              },
-            },
-          },
-        ),
+                backgroundColor: "#F5FBEF",
+                borderTopColor: "#F5FBEF"
+              }
+            }
+          }
+        )
       },
       {
-        initialRouteName: 'App',
-        headerMode: 'none',
-      },
-    ),
+        initialRouteName: "App",
+        headerMode: "none"
+      }
+    )
   );

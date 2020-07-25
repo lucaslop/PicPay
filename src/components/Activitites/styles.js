@@ -11,14 +11,14 @@ export const Header = styled.View`
 `;
 
 export const Title = styled.Text`
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-weight: bold;
 `;
 
 // section card
 export const Card = styled.View`
-  background: #1e222b;
+  background: #fff;
   border-radius: 8px;
   margin-top: 20px;
   padding: 15px;
@@ -31,7 +31,7 @@ export const CardHeader = styled.View`
 export const Avatar = styled.Image``;
 
 export const Description = styled.Text`
-  color: #fff;
+  color: #000;
   font-size: 16px;
   margin-left: 15px;
 `;
@@ -46,7 +46,7 @@ export const CardBody = styled.View`
 `;
 
 export const UserName = styled.Text`
-  color: #fff;
+  color: #000;
   font-size: 18px;
 `;
 
@@ -70,12 +70,12 @@ export const Value = styled.Text`
 export const Hr = styled.View`
   width: 2px;
   height: 13px;
-  background: rgba(255, 255, 255, 0.3);
+  background: grey;
   margin: 0 15px;
 `;
 
 export const Label = styled.Text`
-  color: #eee;
+  color: grey;
   margin-left: 10px;
 `;
 
@@ -87,6 +87,6 @@ export const Action = styled.TouchableOpacity`
   flex-direction: row;
 `;
 export const LabelFooter = styled.Text`
-  color: #eee;
+  color: grey;
   margin-left: 10px;
 `;

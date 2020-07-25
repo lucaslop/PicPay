@@ -49,7 +49,7 @@ const Activitites = () => {
           <Details>
             <Value>R$: 20,00</Value>
             <Hr />
-            <Feather name="lock" size={14} color="#eeee" />
+            <Feather name="lock" size={14} color="grey" />
             <Label>há 3 anos atrás</Label>
           </Details>
 
@@ -58,13 +58,13 @@ const Activitites = () => {
               <MaterialCommunityIcons
                 name="comment-outline"
                 size={14}
-                color="#eee"
+                color="grey"
               />
               <LabelFooter>0</LabelFooter>
             </Action>
 
             <Action>
-              <AntDesign name="hearto" size={14} color="#eee" />
+              <AntDesign name="hearto" size={14} color="grey" />
               <LabelFooter>0</LabelFooter>
             </Action>
           </Footer>
