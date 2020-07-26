@@ -1,7 +1,7 @@
-# PicPay
+
 <!--Cabeçalho-->
 <h1 align="center">
- SuperFilmes
+PicPay
 </h1>
 
 
